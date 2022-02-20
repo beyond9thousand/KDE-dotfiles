@@ -40,4 +40,4 @@ alias god="bash ~/Scripts/Sync/github.god"
 #script to accept torrent magnet links
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
 #quickly switch to 
-alias gd="cd ~/Gitsync"
+alias rp="cd ~/Gitsync"
