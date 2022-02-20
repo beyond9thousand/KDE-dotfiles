@@ -34,6 +34,7 @@ alias prm="sudo shred -uzvn3"
 alias flix="torrentflix"
 #list files
 alias fl="ls -l"
+#synchronizing with github repo
 alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
 alias snkedit="micro ~/Scripts/Sync/rsyncdef.sh"
 alias gk="xclip -sel c ~/Scripts/github.key"
