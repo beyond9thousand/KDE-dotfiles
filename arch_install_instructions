@@ -1,0 +1,65 @@
+#attempt 2
+
+mkfs.btrfs -f /dev/nvme0n1p5							#choose partition where you want linux to be installed
+mount /dev/nvme0n1p5 /mnt -o compress-force=zstd		#enables filesystem compression using the zstd algorithm
+mount 													#listing active mounts
+
+#mounting the efi partition for uefi to boot into
+
+mkdir /mnt/efi
+mount /dev/nvme0n1p1 /mnt/efi
+
+ping 1.1.1.1 		#check net connectivity
+
+#install necessary packages
+pacstrap -i /mnt base base-devel linux-zen linux-zen-headers linux-firmware grub efibootmgr nano plasma konsole dolphin networkmanager arch-install-scripts
+#default(all) for group base-devel
+#from here on out, default for everything unless mentioned otherwise (-> = choose)
+#initramfs -> mkinitcpio
+#ttf fonts -> default(gnu free fonts i think)
+#pipewire session manager -> wireplumber
+#phonon qt 5 backend -> vlc
+
+#entering chroot
+arch-chroot /mnt
+
+useradd -m [username]
+passwd root
+passwd username
+
+echo [hostname] > /etc/hostname 		#the hostname that that shows up in neofetch, example: https://i.imgur.com/LBdk5wA.png
+
+nano /etc/hosts
+#add following lines at the end of file(might be empty), save and exit
+127.0.0.1<tab>localhost			#<tab> is pressing the tab key
+::1<tab><tab>localhost
+
+EDITOR=nano visudo						#handling sudoers, make changes and then save and exit
+#uncomment %wheel ALL=(ALL) ALL
+
+usermod -aG wheel [username]			#same as the username you chose earlier
+
+grub-install /dev/nvme0n1 --boot-dir=/boot --efi-directory=/efi 		#installing grub to efi partition
+
+sudo pacman -Sy os-prober ntfs-3g		#installing os-prober and ntfs drivers
+
+nano /etc/default/grub    #make changes, save and exit
+#change to or add GRUB_TIMEOUT="10" (meaning, variable may or may not exist)
+#change GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet" to GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
+#uncomment GRUB_DISABLE_OS_PROBER="false"
+
+mount /dev/nvme0n1p3 /mnt				#mounting your windows partition (if failed, skip this step)
+
+grub-mkconfig -o /boot/grub/grub.cfg	#generate grub config
+
+systemctl enable sddm NetworkManager
+
+#ignore this next step for the moment.
+#swapon /dev/nvme0n1p7
+
+#exit chroot now
+
+genfstab -U /mnt >> /mnt/etc/fstab    #generate fstab file
+nano /mnt/etc/fstab		#checking for errors, exit
+
+reboot :)
