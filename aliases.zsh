@@ -32,7 +32,7 @@ alias task="systemctl list-timers"
 alias prm="sudo shred -uzvn3"
 #torrentflix shortcut
 alias flix="torrentflix"
-#list files
+#list files with permissions
 alias fl="ls -l"
 #synchronizing with github repo
 alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
