@@ -30,8 +30,6 @@ alias short="micro ~/.oh-my-zsh/custom/aliases.zsh"
 alias task="systemctl list-timers"
 #PERMANENTLY delete files (overwriting)
 alias prm="sudo shred -uzvn3"
-#torrentflix shortcut
-alias flix="torrentflix"
 #list files with permissions
 alias fl="ls -l"
 #synchronizing with github repo
