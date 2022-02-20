@@ -37,4 +37,7 @@ alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
 alias snkedit="micro ~/Scripts/Sync/rsyncdef.sh"
 alias gk="xclip -sel c ~/Scripts/github.key"
 alias god="bash ~/Scripts/Sync/github.god"
+#script to accept torrent magnet links
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
+#quickly switch to 
+alias gd="cd ~/Gitsync"
