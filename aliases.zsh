@@ -8,14 +8,6 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 
-#PACMAN commands
-alias pman="sudo pacman"
-alias update="sudo pacman -Syu"
-alias rem="sudo pacman -R"
-alias remdep="sudo pacman -Rcns"
-alias query="sudo pacman -Qs"
-alias add="sudo pacman -S"
-alias orph="sudo pacman -Qtdq"
 #MSI fan control commands
 alias fans="sudo isw -cp MSI_ADDRESS_DEFAULT"
 alias cool="sudo isw -b"
