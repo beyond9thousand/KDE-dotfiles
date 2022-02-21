@@ -1,0 +1,82 @@
+conky.config = {
+	background = true,
+	use_xft = true,
+	font = '123:size=9',
+	xftalpha = .005,
+	update_interval = 1.5,
+	total_run_times = 0,
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_class = 'conky-semi',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+	double_buffer = true,
+	minimum_width = 240, minimum_height = 5,
+	maximum_width = 400,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = true,
+	default_color = 'gray',
+	default_shade_color = 'red',
+	default_outline_color = 'white',
+	alignment = 'bottom_left',
+
+	gap_x = 7,
+	gap_y = 7,
+
+	stippled_borders = 3,
+	border_inner_margin = 4,
+	border_width = 5,
+
+	no_buffers = true,
+	uppercase = false,
+	cpu_avg_samples = 2,
+	net_avg_samples = 1,
+--override_utf8_locale yes
+	use_spacer = 'right',
+	text_buffer_size = 256,
+
+};
+
+conky.text = [[
+${font Arial:bold:size=10}${color #ab7c15}${color #ab7c15}beyond9thousand ${color #ab7c15} ${hr 1}
+$font${color #909090}$sysname $kernel $alignr $machine
+Uptime $alignr${uptime_short}
+#${font Arial:bold:size=10}${color #ab7c15}NETWORK ${color #ab7c15}${hr 1}
+##$font${color #909090}IP on wlo1 $alignr ${addr wlo1}
+#$font${color #909090}Up $alignr ${upspeed wlo1}
+#${color #909090}${upspeedgraph wlo1 20,250 #909090 #909090}
+#${color #909090}Down $alignr ${downspeed wlo1}
+#${color #909090}${downspeedgraph wlo1 20,250 #909090 #909090}
+#${color #909090}Uploaded: $alignr ${totalup wlo1} Downloaded: $alignr ${totaldown wlo1}
+
+${font Arial:bold:size=10}${color #ab7c15}Processor ${color #ab7c15}${hr 1}
+$font${color #909090}${cpu cpu0}%
+$font${color #909090}${cpubar cpu0}
+CPU Frequency $alignr${freq 0}MHz
+CPU Temperature $alignr${hwmon 4 temp 1}°C
+
+${font Arial:bold:size=10}${color #ab7c15}Memory ${color #ab7c15}${hr 1}
+$font${color #909090}$mem / $memmax $alignr $memperc%
+$membar
+
+${font Arial:bold:size=10}${color #ab7c15}NVMe SSD ${color #ab7c15}${hr 1}
+$font${color #909090}${fs_used /home} / ${fs_size /home} $alignr Free: ${fs_free /home}
+${fs_bar /home}
+${font Arial:bold:size=10}${color #ab7c15}Disk I/O ${hr 1}
+$font${color #909090}Read:$font $alignr$diskio_read
+${color #909090}${diskiograph_read 20,250 #909090 #909090 750}
+${color #909090}Write: $font $alignr$diskio_write
+${color #909090}${diskiograph_write 20,250 #909090 #909090 750}
+
+${font Arial:bold:size=10}${color #ab7c15}Processes ${color #ab7c15}${hr 1}
+$font${color #ab7c15}Total: ${color}$alignr${processes}
+${color #909090}$font${top_mem name 1}${alignr}${top_mem mem 1} %
+$font${top_mem name 2}${alignr}${top_mem mem 2} %
+$font${top_mem name 3}${alignr}${top_mem mem 3} %
+$font${top_mem name 4}${alignr}${top_mem mem 4} %
+$font${top_mem name 5}${alignr}${top_mem mem 5} %
+]];
