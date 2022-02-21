@@ -18,6 +18,7 @@ read -p $'\e[0;94mDo you want to commit and push changes (y/n)? \e[0m' input1
 	elif [ "$input1" == "y" ]||[ "$input1" == "Y" ]||[ "$input1" == "" ]
 		then
 		read -p "Please enter a commit purpose: " input2
+		echo -e "\n"
 		git add -A
 		git commit -a -m "$input2"
 		git push
