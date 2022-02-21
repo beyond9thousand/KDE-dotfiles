@@ -42,4 +42,4 @@ alias flix="bash ~/Scripts/Misc/peerflix.sh"
 #quickly switch to 
 alias rp="cd ~/Gitsync"
 #rm failsafe alias
-alias rm="rm -i"
+alias arm="rm -i"
