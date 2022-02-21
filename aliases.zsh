@@ -41,3 +41,5 @@ alias god="bash ~/Scripts/Sync/github.god"
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
 #quickly switch to 
 alias rp="cd ~/Gitsync"
+#rm failsafe alias
+alias rm="rm -i"
