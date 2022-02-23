@@ -11,7 +11,7 @@ rsync -v /etc/mpv/mpv.conf ~/Gitsync/Configs/
 rsync -v ~/.config/autostart/conky.desktop ~/Gitsync/Scripts/
 rsync -v ~/Scripts/Sync/github.god ~/Gitsync/Scripts/ 
 rsync -v /etc/systemd/coredump.conf ~/Gitsync/Configs/ 
-rsync -v ~/.config/micro/settings.json ~/Gitsync/Configs/micro.settings.json
+rsync -v ~/.config/micro/settings.json ~/Gitsync/Configs/settings.json
 rsync -v /etc/systemd/journald.conf ~/Gitsync/Configs/
 rsync -v ~/Scripts/xorgidle.sh ~/Gitsync/Scripts/
 rsync -v ~/Downloads/theme_files/attempt_theme.shortcuts ~/Gitsync/Configs/krita.attempt_theme.shortcuts

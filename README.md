@@ -1,8 +1,15 @@
-# Learning how to use git
-trying godmode
+# Configs
 
-update: god-mode was successful
+This folder contains all my configuration files that do not fall under the category of a 'dot' file.
 
-updating godmode to make room for entering custom commit message
+# Dotfiles
 
-# Note: Please remove 'micro.' from micro.settings.json file before placing it in your config folder
+My dot files are included here.
+
+# Scripts
+
+Custom scripts I created to make my life easier.
+
+# Services
+
+Custom service unit files that I use on 'user' level.
