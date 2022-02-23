@@ -31,15 +31,19 @@ alias task="systemctl list-timers"
 #PERMANENTLY delete files (overwriting)
 alias prm="sudo shred -uzvn3"
 #list files with permissions
-alias fl="ls -l"
+alias fl="ls -la"
 #synchronizing with github repo
 alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
 alias snkedit="micro ~/Scripts/Sync/rsyncdef.sh"
 alias gk="xclip -sel c ~/Scripts/github.key"
 alias god="bash ~/Scripts/Sync/github.god"
-#script to accept torrent magnet links
+#script to accept youtube, torrent magnet links
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
+alias ytube="bash ~/Scripts/Misc/youtube.sh"
 #quickly switch to 
 alias rp="cd ~/Gitsync"
 #rm failsafe alias
 alias arm="rm -i"
+alias bg="systemctl status --user"
+alias bglist="systemctl --user list-unit-files"
+alias fresh="source .zshrc"
