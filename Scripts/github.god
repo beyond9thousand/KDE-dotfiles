@@ -22,7 +22,7 @@ read -p $'\e[0;92mDo you want to commit and push changes (y/n)? \e[0m' input1
 		git add -A
 		git commit -a -m "$input2"
 		git push
-		echo -e "\n${green}Done${reset}"
+		echo -e "\n${green}${bold}Done${reset}"
 	else
 		echo -e "${red}${bold}Invalid input${reset}, please try again. Exiting ${green}${bold}god mode${reset}"
 	fi
