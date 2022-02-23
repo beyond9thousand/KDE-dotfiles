@@ -9,7 +9,7 @@ blue="\e[0;94m"
 echo -e "\n${red}${bold}WARNING: ${reset}Entering ${green}${bold}god mode${reset}, force sync is in effect \n"
 git status
 echo -e "\n"
-read -p $'\e[0;94mDo you want to commit and push changes (y/n)? \e[0m' input1
+read -p $'\e[0;92mDo you want to commit and push changes (y/n)? \e[0m' input1
 #echo "debug option chosen input1: $input1"
 	if [ "$input1" == "n" ]||[ "$input1" == "N" ]
 		then
