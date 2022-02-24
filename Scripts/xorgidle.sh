@@ -13,10 +13,10 @@ while true; do
     idle1=true
   fi
 
-  if [[ $idle2 = false && $idleTimeMillis -gt $dimAfter ]] ; then
-	xset dpms force off
-    idle2=true
-  fi
+# if [[ $idle2 = false && $idleTimeMillis -gt $dimAfter ]] ; then
+#	xset dpms force off
+#   idle2=true
+# fi
 
   if [[ $idle1 = true && $idleTimeMillis -lt $idleAfter ]] ; then
     sudo msi-perkeyrgb -s aa0000
