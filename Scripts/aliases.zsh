@@ -40,10 +40,14 @@ alias god="bash ~/Scripts/Sync/github.god"
 #script to accept youtube, torrent magnet links
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
 alias ytube="bash ~/Scripts/Misc/youtube.sh"
-#quickly switch to 
+#quickly switch to github repo
 alias rp="cd ~/Gitsync"
 #rm failsafe alias
 alias arm="rm -i"
+#display status and user units
 alias bg="systemctl status --user"
 alias bglist="systemctl --user list-unit-files"
+#source .zshrc
 alias fresh="source .zshrc"
+#neo with default background
+alias neo="neo -D"
