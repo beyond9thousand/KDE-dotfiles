@@ -45,6 +45,7 @@ alias rp="cd ~/Gitsync"
 #rm failsafe alias
 alias arm="rm -i"
 #display status and user units
+alias sbg="sudo systemctl status"
 alias bg="systemctl status --user"
 alias bglist="systemctl --user list-unit-files"
 #source .zshrc

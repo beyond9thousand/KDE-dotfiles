@@ -15,6 +15,5 @@ rsync -v ~/.config/micro/settings.json ~/Gitsync/Configs/settings.json
 rsync -v /etc/systemd/journald.conf ~/Gitsync/Configs/
 rsync -v ~/Scripts/xorgidle.sh ~/Gitsync/Scripts/
 rsync -v ~/Downloads/theme_files/attempt_theme.shortcuts ~/Gitsync/Configs/krita.attempt_theme.shortcuts
-rsync -v ~/.config/systemd/user/buckle.service ~/Gitsync/Services/
 rsync -v ~/.config/systemd/user/pipewire-input-filter-chain.service ~/Gitsync/Services/
 rsync -v ~/Scripts/Sync/rsyncdef.sh ~/Gitsync/Scripts/
