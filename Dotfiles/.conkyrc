@@ -60,7 +60,7 @@ CPU Frequency $alignr${freq 0}MHz
 CPU Temperature $alignr${hwmon 4 temp 1}°C
 
 ${font Arial:bold:size=10}${color #ab7c15}Memory ${color #ab7c15}${hr 1}
-$font${color #909090}$legacymem / $memmax $alignr $memperc%
+$font${color #909090}$mem / $memmax $alignr $memperc%
 $membar
 
 ${font Arial:bold:size=10}${color #ab7c15}NVMe SSD ${color #ab7c15}${hr 1}
