@@ -53,3 +53,4 @@ alias fresh="source .zshrc"
 #neo with default background
 alias neo="neo -D"
 alias share="scrcpy --bit-rate 2M --always-on-top --disable-screensaver"
+alias path="pwd | xclip -selection clipboard"
