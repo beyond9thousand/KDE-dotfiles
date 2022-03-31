@@ -52,3 +52,4 @@ alias bglist="systemctl --user list-unit-files"
 alias fresh="source .zshrc"
 #neo with default background
 alias neo="neo -D"
+alias share="scrcpy --bit-rate 2M --always-on-top --disable-screensaver"
