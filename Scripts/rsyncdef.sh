@@ -18,3 +18,4 @@ rsync -v ~/Downloads/theme_files/attempt_theme.shortcuts ~/Gitsync/Configs/krita
 rsync -v ~/.config/systemd/user/pipewire-input-filter-chain.service ~/Gitsync/Services/
 rsync -v ~/Scripts/Sync/rsyncdef.sh ~/Gitsync/Scripts/
 rsync -v /etc/isw.conf ~/Gitsync/Configs 
+rsync -v ~/.config/broot/conf.hjson ~/Gitsync/Configs/broot.conf.hjson
