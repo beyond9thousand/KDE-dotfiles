@@ -35,7 +35,6 @@ alias fl="ls -la"
 #synchronizing with github repo
 alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
 alias snkedit="micro ~/Scripts/Sync/rsyncdef.sh"
-alias gk="xclip -sel c ~/Scripts/github.key"
 alias god="bash ~/Scripts/Sync/github.god"
 #script to accept youtube, torrent magnet links
 alias flix="bash ~/Scripts/Misc/peerflix.sh"
