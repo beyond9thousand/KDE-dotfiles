@@ -22,7 +22,7 @@ conky.config = {
 	default_color = 'gray',
 	default_shade_color = 'red',
 	default_outline_color = 'white',
-	alignment = 'bottom_right',
+	alignment = 'top_right',
 
 	gap_x = 7,
 	gap_y = 7,
