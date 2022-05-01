@@ -16,8 +16,6 @@ alias soundreboot="systemctl --user restart pipewire.service"
 alias soundconfreboot="systemctl --user restart pipewire.service pipewire-pulse.socket"
 #GRUB config make
 alias gos="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-#WGET2
-alias wget="wget2"
 #COMPSIZE sudo shortcut
 alias comp="sudo compsize"
 #REMOTE desktop x11vnc
@@ -30,8 +28,6 @@ alias short="micro ~/.oh-my-zsh/custom/aliases.zsh"
 alias task="systemctl list-timers"
 #PERMANENTLY delete files (overwriting)
 alias prm="sudo shred -uzvn3"
-#list files with permissions
-alias fl="ls -la"
 #synchronizing with github repo
 alias snk="zsh ~/Scripts/Sync/rsyncdef.sh"
 alias snkedit="micro ~/Scripts/Sync/rsyncdef.sh"
@@ -53,3 +49,5 @@ alias fresh="source .zshrc"
 alias neo="neo -D"
 alias share="scrcpy --bit-rate 2M --always-on-top --disable-screensaver"
 alias path="pwd | xclip -selection clipboard"
+#Copy last used command to clipboard 
+alias cl="fc -ln -1 | sed 's/^\s*//' | tr -d '\n' | xsel -b"
