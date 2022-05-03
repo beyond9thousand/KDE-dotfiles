@@ -1,0 +1,8 @@
+[Desktop Entry]
+Categories=System;Monitor;
+Exec=sleep 5 && conky --daemonize --pause=5 >> /dev/null 2>&1
+Icon=conky-logomark-violet
+Name=conky
+StartupNotify=true
+Terminal=false
+Type=Application
