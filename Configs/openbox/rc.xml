@@ -8,7 +8,7 @@
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
   <focus>
-    <focusNew>no</focusNew>
+    <focusNew>yes</focusNew>
     <followMouse>yes</followMouse>
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
@@ -27,38 +27,38 @@
     <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>FiraCode Nerd Font</name>
-      <size>9</size>
+      <name>Cantarell</name>
+      <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
