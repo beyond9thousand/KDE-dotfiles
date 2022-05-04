@@ -27,38 +27,38 @@
     <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>MesloLGS NF</name>
-      <size>10</size>
+      <name>FiraCode Nerd Font</name>
+      <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
