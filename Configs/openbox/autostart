@@ -31,7 +31,7 @@ ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
 ## hide polybar when maximized
-sh ~/.config/openbox/polybar/default/check.sh &
+sh ~/.config/openbox/polybar/default/hidetray.sh &
 
 ## Notification Daemon
 exec dunst &
